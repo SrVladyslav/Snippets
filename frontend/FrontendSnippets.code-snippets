@@ -1,0 +1,35 @@
+{
+	// ===============================================================================
+	// 															FRAMER MOTION SNIPPETS
+	// ===============================================================================
+	"<motion.div> from Framer Motion B to T": {
+		"prefix": "mdivup",
+		"body": [
+			"<motion.div ",
+			"    initial={{opacity: 0, y:20}}",
+			"    whileInView={{opacity: 1, y:0}}",
+			"    viewport={{ once: ${1:true}, amount: ${2:0.3} }}",
+			"    transition={{ duration: ${3:0.75}, delay: ${4:0.25}}}",
+			"    className='relative w-full flex justify-center'",
+			">",
+			"${5}",
+			"</motion.div>"
+		],
+		"description": "Creates the motion.div from Framer Motion that slides from bottom to top"
+	},
+	"<motion.div> from Framer Motion Scale": {
+		"prefix": "mdivs",
+		"body": [
+			"<motion.div ",
+			"    initial={{opacity: 0, scale: 0.80}}",
+			"    whileInView={{opacity: 1, scale: 1}}",
+			"    viewport={{ once: ${1:true}, amount: ${2:0.3} }}",
+			"    transition={{ duration: ${3:0.75}, delay: ${4:0.25}}}",
+			"    className='relative w-full flex justify-center'",
+			">",
+			"${5}",
+			"</motion.div>"
+		],
+		"description": "Creates the motion.div from Framer Motion that scales in front"
+	}
+}
